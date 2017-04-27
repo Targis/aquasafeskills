@@ -34,12 +34,52 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.75
-	font-family: $default-font
+	font-family: $def-font
 	overflow-x: hidden
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
+
+.main-logo
+	color: $blue
+	font-size: 40px
+	line-height: 1em
+	margin: 0
+	span
+		color: $aqua
+
+.top-row
+	background-color: $light
+	display: block
+	padding: 20px 0
+	width: 100%
+
+.menu
+	list-style-type: none
+	margin: 0
+	padding: 0
+	text-transform: uppercase
+
+.top-menu
+	li
+		border-right: 1px solid #6DC7C2
+		display: inline-block
+		padding: 0 25px
+		&:first-child
+			padding-left: 0
+		&.active
+			a
+				color: $def-color
+		a
+			color: $blue
+			&:hover, &:focus
+				text-decoration: none
+			&:hover
+				color: $def-color
+				transition: color .3s ease
+
+
 
 @import "media" // Всегда в конце
