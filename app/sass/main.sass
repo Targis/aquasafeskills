@@ -37,6 +37,9 @@ body
 	font-family: $def-font
 	overflow-x: hidden
 
+.right
+	float: right
+
 .img-responsive
 	display: block
 	max-width: 100%
@@ -56,6 +59,9 @@ body
 	padding: 20px 0
 	width: 100%
 
+.main-navigation
+	display: inline-block
+
 .menu
 	list-style-type: none
 	margin: 0
@@ -64,11 +70,15 @@ body
 
 .top-menu
 	li
-		border-right: 1px solid #6DC7C2
+		border-right: 2px solid #6DC7C2
 		display: inline-block
+		line-height: 1.1em
 		padding: 0 25px
 		&:first-child
 			padding-left: 0
+		&:last-child
+			border: none
+			padding-right: 0
 		&.active
 			a
 				color: $def-color
@@ -79,6 +89,15 @@ body
 			&:hover
 				color: $def-color
 				transition: color .3s ease
+
+.btn
+	background-color: $blue
+	border-radius: 3px
+	color: #fff
+	display: inline-block
+	padding: 2px 40px
+	text-transform: uppercase
+
 
 
 
